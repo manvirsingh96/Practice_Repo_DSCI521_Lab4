@@ -1,0 +1,101 @@
+---
+title: "DSCI 521 Lab 4 Presentation"
+author: 
+  - "Manvir Kohli"
+date: '1 October 2022'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+## Sing the song ! 
+
+Never gonna give you up
+
+Never gonna let you down
+
+Never gonna run around and desert you
+
+
+<br>
+Never gonna make you cry
+
+Never gonna say goodbye
+
+Never gonna tell a lie and hurt you
+
+---
+
+## Now calculate how many words are in these lyrics {transition="zoom"}
+
+```{r echo =TRUE}
+x = "Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you"
+
+word_count <- lengths((strsplit(x,"\\W"))[1])
+
+paste0("These lyrics have ",word_count, " words" )
+
+```
+
+---
+
+## Time to do math!
+
+Now stop singing and study math!
+
+```{r echo = FALSE}
+
+knitr::include_graphics('https://img.universitystudent.org/1/4/3166/hard-math-meme.jpg')
+```
+
+---
+
+## Math Task
+
+We will create a function that gives us the sum , difference, product and division of 2 numbers!
+
+```{r echo=TRUE}
+math_fun <- function(x,y){
+  s = x+y
+  d = x-y
+  p = x*y
+  r = x/y
+  paste0("Sum = ",s, " Difference = ",d," Product = ",p, " Division = ",r)
+}
+math_fun(20,10)
+```
+
+Now you can go back to singing :)
