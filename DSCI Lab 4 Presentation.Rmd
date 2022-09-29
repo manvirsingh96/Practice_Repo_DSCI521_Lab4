@@ -54,7 +54,7 @@ Never gonna tell a lie and hurt you
 
 ---
 
-## Now calculate how many words are in these lyrics {transition="zoom"}
+## Now calculate how many words are in these lyrics
 
 ```{r echo =TRUE}
 x = "Never gonna give you up
