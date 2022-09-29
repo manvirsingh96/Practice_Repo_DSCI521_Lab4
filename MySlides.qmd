@@ -4,19 +4,20 @@ format: revealjs
 editor: visual
 ---
 
-## Sing the song ! {transition="fade"} 
+## Sing the song ! {transition="fade"}
 
 Never gonna give you up\
-Never gonna let you down \
+Never gonna let you down\
 Never gonna run around and desert you\
 \
 Never gonna make you cry\
 Never gonna say goodbye\
 Never gonna tell a lie and hurt you\
 
----
+------------------------------------------------------------------------
 
 ## Now calculate how many words are in these lyrics {transition="zoom"}
+
 ```{r echo =TRUE}
 x = "Never gonna give you up
 Never gonna let you down
@@ -30,13 +31,16 @@ word_count <- lengths((strsplit(x,"\\W"))[1])
 paste0("These lyrics have ",word_count, " words" )
 
 ```
---- 
+
+------------------------------------------------------------------------
 
 ## Time to do math!
 
 Now stop singing and study math!
 
----
+------------------------------------------------------------------------
+## Math Task
+
 We will create a function that gives us the sum , difference, product and division of 2 numbers!
 
 ```{r echo=TRUE}
@@ -49,5 +53,5 @@ math_fun <- function(x,y){
 }
 math_fun(20,10)
 ```
-Now you can go back to singing :)
 
+Now you can go back to singing :)
